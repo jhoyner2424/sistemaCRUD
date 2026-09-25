@@ -30,14 +30,13 @@ public class GestorProductos {
 
     
     
-    public boolean actualizarProducto(int id, double nuevoPrecio) {
+    public boolean actualizarProducto(int idBuscado, double nuevoPrecio) {
         for (Producto p : productos) {
-            
-            
-          
-            p.setPrecio(nuevoPrecio);
-            System.out.println("Precio actualizado exitosamente");
-            return true;
+            if (p.getId() == idBuscado) {
+                p.setPrecio(nuevoPrecio);
+                System.out.println("Precio actualizado exitosamente");
+                return true;
+            }
         }
         System.out.println("Error: Producto no encontrado");
         return false;
