@@ -17,7 +17,7 @@ public class Producto {
 
     }
 
-    public int getID() {
+    public int getId() {
         return id;
         
     }
