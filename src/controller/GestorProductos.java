@@ -30,9 +30,9 @@ public class GestorProductos {
 
     
     
-    public boolean actualizarProducto(int idBuscado, double nuevoPrecio) {
+    public boolean actualizarProducto(int id, double nuevoPrecio) {
         for (Producto p : productos) {
-            if (p.getId() == idBuscado) {
+            if (p.getId() == id) {
                 p.setPrecio(nuevoPrecio);
                 System.out.println("Precio actualizado exitosamente");
                 return true;
